@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="{% static 'mobiles.css' %}">
+<header id="showcase">
+        <div class="container">
+            <div class="showcase-container">
+                <div class="showcase-content">
+                    <div class="category category-theory">Теория</div>
+                    <h1>Quality Assurance</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum voluptate temporibus quod dolore tempora
+                        pariatur consequuntur exercitationem aspernatur sed recusandae id,
+                         vero consectetur quibusdam nemo molestiae aliquam quidem? Id, pariatur?</p>
+                    <a href="qatech.html" class="btn btn-primary">Читать дальше</a>
+                </div>
+            </div>
+        </div>
+</header>
+
+<!-- Home Articles -->
+
+<section id="home-articles" class="py-2">
+    <div class="container">
+        <h2>Основные темы разделов</h2>
+        <div class="articles-container">
+          <article id="hor-first" class="card bg-light">
+            <img src="img/articles/ent1.jfif" alt="">
+            <div>
+              <div class="category category-tech">Технологии</div>
+              <h3>
+                <a href="article.html">Первый горизонтальный</a>
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </div>
+          </article>
+
+          <article class="card bg-dark">
+            <div class="category category-terms">Термины</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+          </article>
+
+          <article class="card bg-light">
+            <img src="img/articles/tech1.jfif" alt="">
+            <div class="category category-auto">Автоматизация</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+          </article>
+
+          <article class="card bg-primary ">
+            <div class="category category-theory">Теория</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            <img src="img/articles/theory1.jfif" alt="">
+          </article>
+
+          <article class="card bg-light">
+            <img src="img/articles/tech2.jfif" alt="">
+            <div class="category category-auto">Автоматизация</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+          </article>
+
+          <article class="card bg-secondary">
+            <div class="category category-tools">Инструменты</div>
+            <h3>
+              <a href="article.html">Lorem ipsum dolor sit amet</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+          </article>
+
+          <article id="hor-last" class="card bg-light">
+            <div>
+              <div class="category category-tech">Технологии</div>
+              <h3>
+                <a href="article.html">Последний горизонтальный</a>
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </div>
+            <img src="img/articles/ent2.jfif" alt="">
+          </article>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
